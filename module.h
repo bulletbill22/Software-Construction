@@ -6,7 +6,7 @@ using std::string;
 
 string convert(const int & roman)
 {
-	return "";
+	return "I";
 }
 
 #endif
