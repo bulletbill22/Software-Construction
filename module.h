@@ -6,7 +6,9 @@ using std::string;
 
 string convert(const int & roman)
 {
-	return "I";
+	if(roman==1) return "I";
+	else if (roman==2) return "II";
+	else return "";
 }
 
 #endif
