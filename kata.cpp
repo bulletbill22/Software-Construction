@@ -23,7 +23,13 @@ map<int, string> test_cases = {
 	{29, "XXIX"},
 	{30, "XXX"},
 	{31, "XXXI"},
-	{38, "XXXVIII"}
+	{38, "XXXVIII"},
+	{49, "XLIX"},
+	{50, "L"},
+	{54, "LIV"},
+	{99, "XCIX"},
+	{100, "C"},
+	{167, "CLXVII"}
 };
 
 
