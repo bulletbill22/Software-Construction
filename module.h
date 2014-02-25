@@ -12,6 +12,11 @@ string convert(int arabic)
 		roman += "X";
 		arabic -= 10;
 	}
+	while (arabic>=9)
+	{
+		roman += "IX";
+		arabic -= 9;
+	}
 	while (arabic>=5)
 	{
 		roman += "V";
