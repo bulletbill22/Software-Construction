@@ -7,6 +7,11 @@ using std::string;
 string convert(int arabic)
 {
 	string roman = "";
+	while (arabic>=10)
+	{
+		roman += "X";
+		arabic -= 10;
+	}
 	while (arabic>=5)
 	{
 		roman += "V";
