@@ -9,6 +9,7 @@ using std::map;
 
 map<int, string> test_cases = {
 	{2, "II"},
+	{4, "IV"},
 	{5, "V"},
 	{7, "VII"},
 	{10, "X"},

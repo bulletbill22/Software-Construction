@@ -17,6 +17,11 @@ string convert(int arabic)
 		roman += "V";
 		arabic -= 5;
 	}
+	while (arabic>=4)
+	{
+		roman += "IV";
+		arabic -= 4;
+	}
 	while (arabic>=1)
 	{
 		roman += "I";
