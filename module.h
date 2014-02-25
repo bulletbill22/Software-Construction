@@ -7,6 +7,10 @@ using std::string;
 using std::map;
 
 map<int, string, std::greater<int>> conversion_table = {
+	{1000, "M"},
+	{900, "CM"},
+	{500, "D"},
+	{400, "CD"},
 	{100, "C"},
 	{90, "XC"},
 	{50, "L"},
