@@ -38,9 +38,10 @@ int main()
 	{
 		if (!test(test_case.first, test_case.second))
 		{
-			cout << "Error: tried converting " << test_case.first << " to " << test_case.second << ". Actual result: " << convert(test_case.first);
+			cout << "Error: tried converting " << test_case.first << " to " << test_case.second << ". Actual result: " << convert(test_case.first) << endl;
 			return 1;
 		}
 	}
+	cout << "All tests passed." << endl;
 	return 0;
 }

@@ -3,34 +3,27 @@
 
 #include <string>
 using std::string;
+#include <map>
+using std::map;
+
+map<int, string, std::greater<int>> conversion_table = {
+	{10, "X"},
+	{9, "IX"},
+	{5, "V"},
+	{4, "IV"},
+	{1, "I"}
+};
 
 string convert(int arabic)
 {
 	string roman = "";
-	while (arabic>=10)
+	for(auto pair : conversion_table)
 	{
-		roman += "X";
-		arabic -= 10;
-	}
-	while (arabic>=9)
-	{
-		roman += "IX";
-		arabic -= 9;
-	}
-	while (arabic>=5)
-	{
-		roman += "V";
-		arabic -= 5;
-	}
-	while (arabic>=4)
-	{
-		roman += "IV";
-		arabic -= 4;
-	}
-	while (arabic>=1)
-	{
-		roman += "I";
-		arabic -= 1;
+		while(arabic>=pair.first)
+		{
+			roman+=pair.second;
+			arabic-=pair.first;
+		}
 	}
 	return roman;
 }
