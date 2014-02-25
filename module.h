@@ -4,13 +4,20 @@
 #include <string>
 using std::string;
 
-string convert(const int & roman)
+string convert(int arabic)
 {
-	if (roman==1) return "I";
-	else if (roman==2) return "II";
-	else if (roman==3) return "III";
-	else if (roman==5) return "V";
-	else return "";
+	string roman = "";
+	while (arabic>=5)
+	{
+		roman += "V";
+		arabic -= 5;
+	}
+	while (arabic>=1)
+	{
+		roman += "I";
+		arabic -= 1;
+	}
+	return roman;
 }
 
 #endif
